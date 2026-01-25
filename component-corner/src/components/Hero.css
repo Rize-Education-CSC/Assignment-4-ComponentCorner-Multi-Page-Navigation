@@ -1,0 +1,44 @@
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* dark overlay for text readability */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  border: none;
+  background: #ffffff;
+  color: #667eea;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+}
