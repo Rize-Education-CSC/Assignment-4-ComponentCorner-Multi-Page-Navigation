@@ -1,24 +1,56 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #333;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1f2937;
   color: white;
 }
 
-.cart-container {
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+
+.header-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
   position: relative;
 }
 
-/* Cart badge styling generated with assistance from AI */
+.header-nav a:hover {
+  opacity: 0.8;
+}
+
+
+.header-cart {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+
 .cart-badge {
   position: absolute;
   top: -8px;
   right: -10px;
   background-color: red;
   color: white;
-  border-radius: 50%;
-  padding: 4px 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-weight: bold;
 }

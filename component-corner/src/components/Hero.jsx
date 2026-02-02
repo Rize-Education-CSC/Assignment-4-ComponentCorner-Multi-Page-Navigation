@@ -1,18 +1,22 @@
-import "./Header.css";
+import "./Hero.css";
 
-function Header({ storeName, cartCount }) {
+function Hero({ title, subtitle, cta, image }) {
   return (
-    <header className="header">
-      <h1>{storeName}</h1>
-
-      <div className="cart-container">
-        <span className="cart-icon">🛒</span>
-        {cartCount > 0 && (
-          <span className="cart-badge">{cartCount}</span>
-        )}
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="hero-content">
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+        <button>{cta}</button>
       </div>
-    </header>
+    </section>
   );
 }
 
-export default Header;
+export default Hero;
